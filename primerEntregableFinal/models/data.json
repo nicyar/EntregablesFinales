@@ -1,0 +1,78 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "timestamp": "Sat, 08 Oct 2022 21:41:27 GMT",
+        "nombre": "OTTO",
+        "descripcion": "Funciona para llevar tu TV a una smarTV",
+        "codigo": 22,
+        "foto": "https://www.weplay.cl/pub/media/catalog/product/cache/3f1b140c3c9f36fbf6b01dffb521c246/p/o/portada.png",
+        "precio": "100",
+        "stock": 10
+      },
+      {
+        "id": 2,
+        "timestamp": "Sat, 08 Oct 2022 21:31:57 GMT",
+        "nombre": "Fire TV",
+        "descripcion": "Funciona para llevar tu TV a una smarTV",
+        "codigo": 10,
+        "foto": "https://www.weplay.cl/pub/media/catalog/product/cache/3f1b140c3c9f36fbf6b01dffb521c246/p/o/portada.png",
+        "precio": "100",
+        "stock": 10
+      }
+    ],
+    "carrito": [
+      {
+        "id": 1,
+        "timestamp": "",
+        "productos": [
+          {
+            "id": 1,
+            "timestamp": "Sat, 08 Oct 2022 21:41:27 GMT",
+            "nombre": "OTTO",
+            "descripcion": "Funciona para llevar tu TV a una smarTV",
+            "codigo": 22,
+            "foto": "https://www.weplay.cl/pub/media/catalog/product/cache/3f1b140c3c9f36fbf6b01dffb521c246/p/o/portada.png",
+            "precio": "100",
+            "stock": 10
+          },
+          {
+            "id": 2,
+            "timestamp": "Sat, 08 Oct 2022 21:41:27 GMT",
+            "nombre": "JOSE",
+            "descripcion": "Funciona para llevar tu TV a una smarTV",
+            "codigo": 22,
+            "foto": "https://www.weplay.cl/pub/media/catalog/product/cache/3f1b140c3c9f36fbf6b01dffb521c246/p/o/portada.png",
+            "precio": "100",
+            "stock": 10
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "timestamp": "",
+        "productos": [
+          {
+            "id": 1,
+            "timestamp": "Sun, 09 Oct 2022 21:32:48 GMT",
+            "nombre": "CODER",
+            "descripcion": "Funciona para llevar tu TV a una smarTV",
+            "codigo": 6,
+            "foto": "https://www.weplay.cl/pub/media/catalog/product/cache/3f1b140c3c9f36fbf6b01dffb521c246/p/o/portada.png",
+            "precio": "100",
+            "stock": 10
+          },
+          {
+            "id": 2,
+            "timestamp": "Sun, 09 Oct 2022 21:44:52 GMT",
+            "nombre": "HOUSE",
+            "descripcion": "Funciona para llevar tu TV a una smarTV",
+            "codigo": 93,
+            "foto": "https://www.weplay.cl/pub/media/catalog/product/cache/3f1b140c3c9f36fbf6b01dffb521c246/p/o/portada.png",
+            "precio": "100",
+            "stock": 10
+          }
+        ]
+      }
+    ]
+  }
