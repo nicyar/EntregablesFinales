@@ -1,0 +1,4 @@
+[2023-03-17T17:44:00.666] [WARN] warnOnly - ruta / método GET no implementada
+[2023-03-17T17:44:01.073] [WARN] warnOnly - ruta /favicon.ico método GET no implementada
+[2023-03-17T17:44:11.162] [WARN] warnOnly - ruta /login método GET no implementada
+[2023-03-17T17:44:16.969] [WARN] warnOnly - ruta /signup método GET no implementada

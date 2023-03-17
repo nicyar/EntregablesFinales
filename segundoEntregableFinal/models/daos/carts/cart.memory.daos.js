@@ -5,7 +5,7 @@ class CartMemoryDao extends MemoryContainer{
         super();
         this.cart =[];
     }
-    async getProductToCar(idCarrito){
+    async getProductToCart(idCarrito){
         const cartexist =this.items.find(item => item.id ===idCarrito).products;
         return [...cartexist]
     }
@@ -34,7 +34,15 @@ class CartMemoryDao extends MemoryContainer{
     
         return `El producto fue agregado`
       }
-      
+    async createCart(producto){
+        const carrito ={
+            id : length(this.cart) +1,
+            products:[
+                {producto}
+            ]
+        }
+        this.cart.push(carrito)
+    }
 }
 
 module.exports = CartMemoryDao;

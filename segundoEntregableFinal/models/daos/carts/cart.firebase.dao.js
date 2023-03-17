@@ -7,7 +7,7 @@ class CartFirebaseDao extends FirebaseContainer {
     super(collection);
   }
 
-  async getProductToCar(idCarrito){
+  async getProductToCart(idCarrito){
     const doc = this.query.doc(idCarrito)
     const item = doc.get()
     const response =item.data().products
@@ -26,7 +26,7 @@ class CartFirebaseDao extends FirebaseContainer {
    const docRef = this.query.doc(idCarrito)
    let back ;
    if(!docRef){
-    const docRef = this.query.doc();
+    
     const products = [];
     back = await docRef.set({
       products,
@@ -37,6 +37,15 @@ class CartFirebaseDao extends FirebaseContainer {
     back = await docRef.update({products:FieldValue.arrayUnion(idProducto)})
    }
     return back;
+  }
+  async createCart(producto){
+    const docRef = this.query.doc();
+    return await docRef.set({
+      id:FieldValue.increment(1),
+      timestamp: FieldValue.serverTimestamp(),
+      products:[producto]
+    });
+
   }
 }
 

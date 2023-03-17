@@ -35,6 +35,15 @@ class CartController{
         }
     }
 
+    async createCart(req,res,next){
+        try {
+            const cart = await cartsDao.createCart(req.body)
+            const response = successResponse(cart)
+            res.status(HTTP_STATUS.CREATED).json(response)
+        } catch (error) {
+            next(error)
+        }
+    }
 
 }
 

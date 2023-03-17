@@ -5,7 +5,7 @@ class CartMemoryDao extends FileContainer{
     constructor(){
         super(route);
     }
-    async getProductToCar(idCarrito){
+    async getProductToCart(idCarrito){
         try{
             const data = await FileSystem.promises.readFile(this.route,"utf-8")
             const objetos = data ? (JSON.parse(data)) : []
@@ -58,6 +58,22 @@ class CartMemoryDao extends FileContainer{
             console.log(err)
         }
       }
+    async createCart(producto){
+        try {
+            const data = await fs.promises.readFile(this.route,"utf-8")
+            const objetos = data ? (JSON.parse(data)) : []
+            const cart ={
+                id:length(objetos)+1,
+                products:[
+                    {producto}
+                ] 
+            }
+            return await fs.promises.writeFile(this.route,JSON.stringify(cart,null,2))
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
       
 }
 
