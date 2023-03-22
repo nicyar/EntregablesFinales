@@ -1,0 +1,14 @@
+[2023-03-19T17:57:27.862] [ERROR] errorOnly - RestException [Error]: The requested resource /PhoneNumbers/1111111111 was not found
+    at success (C:\Users\Nico\Documents\Back-End\EntregablesFinales\proyectoFinal\node_modules\twilio\lib\base\Version.js:63:15)
+    at Promise_then_fulfilled (C:\Users\Nico\Documents\Back-End\EntregablesFinales\proyectoFinal\node_modules\twilio\node_modules\q\q.js:766:44)
+    at Promise_done_fulfilled (C:\Users\Nico\Documents\Back-End\EntregablesFinales\proyectoFinal\node_modules\twilio\node_modules\q\q.js:835:31)
+    at Fulfilled_dispatch [as dispatch] (C:\Users\Nico\Documents\Back-End\EntregablesFinales\proyectoFinal\node_modules\twilio\node_modules\q\q.js:1229:9)
+    at Pending_become_eachMessage_task (C:\Users\Nico\Documents\Back-End\EntregablesFinales\proyectoFinal\node_modules\twilio\node_modules\q\q.js:1369:30)
+    at RawTask.call (C:\Users\Nico\Documents\Back-End\EntregablesFinales\proyectoFinal\node_modules\asap\asap.js:40:19)
+    at flush (C:\Users\Nico\Documents\Back-End\EntregablesFinales\proyectoFinal\node_modules\asap\raw.js:50:29)
+    at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+  status: 404,
+  code: 20404,
+  moreInfo: 'https://www.twilio.com/docs/errors/20404',
+  details: undefined
+}

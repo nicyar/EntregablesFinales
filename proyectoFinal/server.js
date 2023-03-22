@@ -1,7 +1,7 @@
 import express from "express";
 import session from 'express-session';
 const { Router } = express;
-import { logger200, logger404, validateNumber, jwt } from "./middlewares/middlewares.js";
+import {  logger404, validateNumber } from "./middlewares/middlewares.js";
 import { logger, loggerError } from "./utils/logger.js";
 import { Server as IOServer } from "socket.io";
 import { Server as HttpServer } from "http";
@@ -121,9 +121,9 @@ router.get('/signup', signupRoute())
 router.post('/signup', validateNumber(), signupPost())
 router.get('/logout', logout())
 
-app.use('/shop', logger200(), router);
+app.use('/shop', router);
 app.use('/api', authRouter);
-app.use('/api/products', jwt, logger200(), productsRouter); 
+app.use('/api/products', productsRouter); 
 app.use('/api/cart', cartRouter); 
 app.use('/api/orders', orderRouter);
 app.use('/api/mensajes', messagesRouter);

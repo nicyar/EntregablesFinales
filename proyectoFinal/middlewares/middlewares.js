@@ -98,12 +98,7 @@ export const validateNewOrder = () => {
     }
 }
 
-export const logger200 = () => {
-    return (req, res, next) => {
-        logger.info(`ruta ${req.originalUrl} método ${req.method}`);
-        next();
-    }
-}
+
 
 export const logger404 = () => {
     return (req, res, next) => {
