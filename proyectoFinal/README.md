@@ -65,10 +65,10 @@ Además de la posibilidad de testing se podrá iniciar el servidor en modo desar
 
 # VISTAS
 ## PAGINA PRINCIPAL
-La misma será shop. Si el usuario no inició sesión se lo redirigirá a shoplogin. Si inicia sesión correctamente podrá visualizar la vista shop, donde estarán disponibles los productos para agregar al carrito, asi como el chat general. Los productos podrán ser filtrados en esta vista con la ruta shopproductscategory, siendo las categorias man, woman y unisex.
+La misma será /shop. Si el usuario no inició sesión se lo redirigirá a shop/login. Si inicia sesión correctamente podrá visualizar la vista shop, donde estarán disponibles los productos para agregar al carrito, asi como el chat general. Los productos podrán ser filtrados en esta vista con la ruta /shop/products/:category, siendo las categorias man, woman y unisex.
 
 ## CARRITO
-En la ruta shopuserid el usuario podrá ver su carrito, confirmar la orden o eliminar productos del mismo.
+En la ruta /shop/:userid el usuario podrá ver su carrito, confirmar la orden o eliminar productos del mismo.
 
 ## PERFIL
-En la ruta shopprofile el usuario podrá ver sus datos de registro, asi como links a vistas donde podrán ver sus ordenes generadas (shoporders) y los mensajes propios enviados al chat general (shopmessages).
+En la ruta /shop/profile el usuario podrá ver sus datos de registro, asi como links a vistas donde podrán ver sus ordenes generadas (/shop/orders) y los mensajes propios enviados al chat general (/shop/messages).
