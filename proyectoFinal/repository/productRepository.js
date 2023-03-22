@@ -10,15 +10,7 @@ class ProductRepository {
 
     async getProducts() {
         const productos = await this.dao.getElems();
-        var producto =[{
-            name:"calvin klein",
-            stock:88,
-            price:80000,
-            photo:"https://static.dafiti.com.ar/p/calvin-klein-9338-642768-1-product.jpg",
-            code:"gg99hh",
-            desc:"perfume calvin klein"
-        }]
-        return producto.map(dto => new ProductDTO(dto));
+        return productos.map(dto => new ProductDTO(dto));
     }
 
     async getProduct(id) {
